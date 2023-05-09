@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -5,15 +11,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
+a{
+    background-color: coral;
+    
+}
+
 .container{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     background-color: aquamarine;
-    width: 30%;
-    height: 60%;
+    width: 500px;
+    height: 590px;
 }
+
 header{
     display: flex;
     justify-content: center;
@@ -22,33 +35,83 @@ header{
     height: 80px;
     border-radius: 10px;
 }
+
 .barra{
+    background-color: orange;
+    width: 70%;
     height: 16px;
-    background-color: blueviolet;
+    border: 1px solid gray;
 }
+
 main{
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    background-color: crimson;
+    margin-top: 20px;
+    height: 60%;
+    background-color: white;
+    position: relative;    
+    border: 1px solid gray;
 }
+
+.wrapper{
+    position: absolute;
+    padding: 24px 36px;
+    border-top: 1px solid gray;
+
+}
+
+.text p{
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+
 footer{
     display: flex;
-    justify-content: space-evenly;
-    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
     background-color: chocolate;
 }
+
 .text{
-    padding: 24px;
-    font-size: 24px;
     background-color: blueviolet;
-    height: 50%;
 }
-.wrapper{
-    padding: 36px;
+
+.donation-form{
+    display: flex;
+    justify-content: space-between;
 }
-a{
-    width: 100%;
-    background-color: coral;
-    display: in-;
+
+.input{
+    width: 45%;
+    height: 60px;
+    margin-top: 1em;
+    font-size: 1.2em;
+    padding: 0.5 0.8em;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    border-radius: 6px;
+}
+
+.button-text{
+    width: 45%;
+    height: 60px;
+    margin-top: 1em;
+    font-size: 1.2em;
+    padding: 0.5 0.8em;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+}
+
+.button-footer{
+    width: 45%;
+    height: 60px;
+    margin-top: 1em;
+    font-size: 1.2em;
+    padding: 0.5 0.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+.orange{
+    color: orange;
 }
